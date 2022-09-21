@@ -25,7 +25,6 @@ const Register = ({openModal, closeModal, email, setEmail, password, setPassword
   const validateField = () => {
     if(password.input.length > 0){
       if (password.input !== passwordConfirm.input) {
-        console.log("contraseña NO iguales");
         setPasswordConfirm((prevState)=>{
           return {...prevState, valid: false}
         })

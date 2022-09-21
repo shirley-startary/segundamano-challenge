@@ -13,7 +13,6 @@ const Input = ({type, placeholder, messageError, field ,setField, expression, fu
       setField({...field, valid:null})
     }
     if(expression) {
-      // console.log(expression.name.test(name.input));
       if(expression.test(field.input)){
         setField({...field, valid:true})
       } else if (event.type==='focus' || event.type==='keyup'){
