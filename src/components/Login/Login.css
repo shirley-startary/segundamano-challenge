@@ -1,0 +1,133 @@
+.container {
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, .3); */
+  background-color: fff;
+  overflow: hidden;
+  text-align: center;
+  width: 400px;
+  max-width: 100%;
+}
+
+.header {
+  margin-top: 10px;
+  padding: 20px 40px;
+}
+
+.header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+.form-control input {
+  border: 1px solid rgb(216, 215, 215) ;
+  border-radius: 2px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 15px;
+  outline-style: none;
+}
+
+.form-control input:focus-within {
+  border: .5px solid black;
+}
+
+.form-control.error input {
+  border-color:  #c65656;
+}
+
+.form-control i, .form-control span  {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+}
+
+.form-control i {
+  visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+  color: rgb(85, 199, 119);
+  visibility: visible;
+}
+
+.form-control.error i.fa-times-circle {
+  color: #c65656;
+  visibility: visible;
+}
+
+.form-show  {
+  visibility: hidden;
+  cursor: pointer;
+  color: #09646c;
+  text-decoration: underline;
+  transition: color .15s ease-in-out;
+  transition-property: color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+.show {
+  visibility: visible;
+}
+
+.form-control small {
+  position: absolute;
+  visibility: hidden;
+  top: 38px;
+  left: 0;
+}
+.form-control.error small {
+  color: #c65656;
+  visibility: visible;
+}
+
+form button {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 60px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #ff5859 ;
+  border: 2px solid #ff5859;
+  border-radius: 2px;
+}
+
+
+form footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  padding: 15px;
+  text-align: center;
+  background-color:  #18b9b4 ;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+form footer a {
+  color: #fff;
+}
+
+
+/* Naranja de Segunda mano  #ff5859 */
+/* Naranja de Segundamano  hover  #d94647 */
+/* verde de Segundamano #18b9b4 */
+/* mensaje de error #c65656 */
+          /* {<i className='fas fa-exclamation-circle'></i>} */
