@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 
 const Input = ({type, placeholder, messageError, field ,setField, expression, functionValidate}) => {
@@ -8,7 +8,6 @@ const Input = ({type, placeholder, messageError, field ,setField, expression, fu
   }
 
   const validation = (event) => {
-    console.log(event.type,field , expression);
     if(event.type==='focus' || event.type === 'keyup'){
       setField({...field, valid:null})
     }

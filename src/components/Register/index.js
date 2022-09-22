@@ -1,21 +1,7 @@
-import React, { useState, } from "react";
+import React from "react";
 import Input from "../Input";
 
 const Register = ({openModal, closeModal, email, setEmail, password, setPassword, passwordConfirm,setPasswordConfirm, expression}) => {
-
-  const [isShow, setIsShow] = useState(false)
-  const [showPassword, setShowPassword] =useState('password')
-
-  const handleShowPassword = (event) => {
-    const activeShowPass = event.target.innerHTML;
-    setIsShow(!isShow)
-    if(activeShowPass==='Mostrar'){
-      setShowPassword('text')
-    }
-    if(activeShowPass==='Ocultar') {
-      setShowPassword('password')
-    }
-  }
 
   const handleBackCreateUser = () => {
     openModal()
@@ -52,7 +38,7 @@ const Register = ({openModal, closeModal, email, setEmail, password, setPassword
           expression={expression.email}
         />
         <Input
-          type={`${showPassword}`}
+          type="password"
           placeholder='Tu contraseña'
           field={password} 
           setField={setPassword}
@@ -60,7 +46,7 @@ const Register = ({openModal, closeModal, email, setEmail, password, setPassword
           expression={expression.password}
         />
         <Input
-          type={`${showPassword}`}
+          type="password"
           placeholder='Repite tu contraseña'
           field={passwordConfirm}
           setField={setPasswordConfirm}
@@ -68,18 +54,10 @@ const Register = ({openModal, closeModal, email, setEmail, password, setPassword
           functionValidate={validateField}
         />
 
-        {/* <div className='form-control'>
-          <input type={`${showPassword}`} placeholder='Repite tu contraseña' />
-          <i className='fas fa-check-circle'></i>
-          <i className="fas fa-times-circle"></i>
-          <small>Error message</small>
-          <small>Necesitas confirmar tu contraseña</small>
-        </div> */}
-
         <button type='submit'>Crear una cuenta</button>
 
         <footer>
-          ¿Ya tienes cuenta? <a href="#" onClick={handleBackCreateUser}>Inicia sesión</a>
+          ¿Ya tienes cuenta? <a href="/#" onClick={handleBackCreateUser}>Inicia sesión</a>
         </footer>
       </form>
     </div>

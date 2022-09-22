@@ -49,7 +49,7 @@ const Login = ({openModal, closeModal, email, setEmail, expression}) => {
         <button type='submit'>Entra</button>
 
         <footer>
-          ¿No tienes cuenta? <a href="#" onClick={handleBackCreateUser}> Crea una nueva</a>
+          ¿No tienes cuenta? <a href="/#" onClick={handleBackCreateUser}> Crea una nueva</a>
         </footer>
       </form>
     </div>
